@@ -2,8 +2,16 @@
 import rsa as rsa
 import read_file as rf
 
-key = int(input("Enter the Encryption Key: " ))
-mod_value = int(input("Enter the Modulus: " ))
+num = (input("Enter the Encryption Key: " ))
+while (len(num) < 4 or not num.isdigit()):
+    num = (input("Key must be an integer (4-5 digits)\nEnter the Encryption Key: " ))
+key = int(num)
+
+num = (input("Enter the Modulus: " ))
+while (len(num) < 4 or not num.isdigit()):
+    num = (input("Modulus must be an integer (4-5 digits)\nEnter the Modulus Key: " ))
+mod_value = int(num)
+
 plaintext = input("Enter a message to encrypt OR type 'file'\n")
 
 if (plaintext == "file"):
