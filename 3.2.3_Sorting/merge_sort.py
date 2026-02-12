@@ -4,8 +4,7 @@ def get_counter():
     return counter
 
 def merge_sort(arr):
-    """ Merge Sort, Complexity: O(n log(n)) """
-    
+    """ Merge Sort, Complexity: O(n log(n)) """    
     # our recursive base case
     if len(arr) <= 1:
         return arr
@@ -24,7 +23,7 @@ def merge(left, right, merged):
     left_cursor, right_cursor = 0, 0
     while left_cursor < len(left) and right_cursor < len(right):
         # sort each one and place into the result
-        counter += 1 # add to the comparison counter
+        counter += 1 #increment counter of comparisons, due to next line
         if left[left_cursor] <= right[right_cursor]:
             merged[left_cursor+right_cursor]=left[left_cursor]
             left_cursor += 1
