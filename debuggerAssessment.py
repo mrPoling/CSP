@@ -1,15 +1,14 @@
-
 def calculate_average(scores):
+    first_score = scores[0]
     total = 0
 
     for score in scores:
         total += score
 
-    if len(scores) = 0:
+    if len(scores) == 0
         return 0
 
     return total / len(scores)
-
 
 classes = {
     "Period 1": [
@@ -22,7 +21,6 @@ classes = {
         {"name": "Emma", "scores": [75, 85, 95]}
     ]
 }
-
 
 for period, students in classes.items():
     class_total = 0
